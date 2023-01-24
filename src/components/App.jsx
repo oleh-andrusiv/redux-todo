@@ -24,7 +24,7 @@ const App = () => {
     const clickedElem = event.target.getAttribute('id');
     
     
-    if (clickedAction === 'done-btn') {
+    if (clickedAction === 'done-btn' && list[clickedElem].isDone === '') {
         dispatch(doneToDo(clickedElem))
     }
     

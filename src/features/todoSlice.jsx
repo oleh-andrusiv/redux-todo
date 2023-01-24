@@ -23,11 +23,9 @@ const todoSlice = createSlice({
             }
         },
         doneToDo: (state, action) => {
-            console.log(action.payload)
             state.list[action.payload].isDone = "done-item"
         },
         deleteToDo: (state, action) => {
-            console.log(action.payload)
             state.list.splice(action.payload, 1);
         }
     } 
